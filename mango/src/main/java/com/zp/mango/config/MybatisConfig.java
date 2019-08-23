@@ -29,7 +29,7 @@ public class MybatisConfig {
         //4、获取mapper.xml文件
         PathMatchingResourcePatternResolver resourcePatternResolver = new PathMatchingResourcePatternResolver();
         //扫描映射文件
-        sessionFactoryBean.setMapperLocations(resourcePatternResolver.getResources("classpath*:**/mapper/*.xml"));
+        sessionFactoryBean.setMapperLocations(resourcePatternResolver.getResources("classpath*:**/generator/*.xml"));
 
         return sessionFactoryBean.getObject();
     }
