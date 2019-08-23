@@ -43,7 +43,7 @@
 
         <!-- 相信很多人都有过这样的需求，就是希望MBG生成的代码中可以包含**注释信息**，具体就是生成表或字段的备注信息 -->
         <commentGenerator>
-            <property name="suppressAllComments" value="false"/>
+            <property name="suppressAllComments" value="true"/>
             <property name="suppressDate" value="true"/>
         </commentGenerator>
 
@@ -174,9 +174,9 @@
                 column:要重新设置的列名；
                 注意，一个table元素中可以有多个columnOverride元素哈~
              -->
-            <columnOverride column="username">
+            <!--<columnOverride column="username">-->
                 <!-- 使用property属性来指定列要生成的属性名称 -->
-                <property name="property" value="userName"/>
+                <!--<property name="property" value="userName"/>-->
 
                 <!-- javaType用于指定生成的domain的属性类型，使用类型的全限定名
                 <property name="javaType" value=""/>
@@ -195,7 +195,7 @@
                 <!-- 参考table元素的delimitAllColumns配置，默认为false
                 <property name="delimitedColumnName" value=""/>
                  -->
-            </columnOverride>
+           <!-- </columnOverride>-->
 
             <!-- ignoreColumn设置一个MGB忽略的列，如果设置了改列，那么在生成的domain中，生成的SQL中，都不会有该列出现
                 column:指定要忽略的列的名字；
